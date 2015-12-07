@@ -1,0 +1,11 @@
+<div class="keywords">
+</div>
+
+<script>
+	tags = <%= (@tags.to_json.html_safe) %>
+	console.log(tags)
+	$('.keywords').jQCloud(tags, {
+  width: 500,
+  height: 350
+});
+</script>
